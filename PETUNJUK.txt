@@ -1,0 +1,42 @@
+BIRTHDAY SURPRISE — DARK ROMANTIC
+================================
+
+CARA MENJALANKAN
+1. Ekstrak birthday-surprise.zip.
+2. Buka folder birthday-surprise.
+3. Klik dua kali index.html untuk membuka di browser.
+4. Password default: 14102006.
+
+STRUKTUR FILE
+- index.html
+- style.css
+- script.js
+- images/
+- music/
+
+GANTI FOTO
+Masukkan foto ke folder images dan beri nama:
+- her-1.jpg  : foto dia untuk slide 2
+- us-1.jpg   : foto kalian bersama untuk slide 3
+- her-2.jpg  : foto dia/kenangan lain untuk slide 4
+
+Boleh memakai format JPG. Jika ingin memakai PNG atau WEBP, ubah juga nama file pada atribut src di index.html.
+Gunakan foto yang sudah kamu punya izin untuk membagikannya. Untuk tampilan terbaik, pilih foto potret untuk her-1 dan her-2, dan foto landscape untuk us-1.
+
+GANTI MUSIK
+1. Buat folder music jika belum ada.
+2. Masukkan file audio milikmu dengan nama romantic-song.mp3.
+3. File HTML sudah mengarah ke music/romantic-song.mp3.
+4. Jika nama atau format berbeda, ubah atribut src pada elemen <source> di index.html.
+Browser biasanya memerlukan interaksi pengguna sebelum audio boleh diputar, sehingga musik dicoba mulai setelah password benar. Jika tidak terdengar, tekan tombol Music off / Tap for music di pojok kanan atas.
+
+GANTI PASSWORD DAN SURAT
+Buka script.js lalu edit CONFIG.password dan CONFIG.letter di bagian atas file.
+
+GANTI UCAPAN PER SLIDE
+Buka index.html. Cari data-text di elemen dengan class typed-copy, lalu ganti isi teks di dalam tanda kutip. Hindari memakai tanda kutip ganda lurus di dalam teks; atau ubah teks langsung dengan hati-hati.
+
+CATATAN
+- Google Fonts memerlukan internet; font fallback tetap tersedia jika offline.
+- Password di website statis hanya gerbang kejutan di sisi browser, bukan keamanan sungguhan. Jangan gunakan password penting.
+- Pastikan foto dan file musik berada pada folder yang benar.

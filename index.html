@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090611">
+  <title>For You, My Love ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="ambient ambient-three"></div>
+  <div id="particles" aria-hidden="true"></div>
+
+  <audio id="backgroundMusic" loop preload="none">
+    <!-- Ganti music/romantic-song.mp3 dengan file lagu milikmu -->
+    <source src="music/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="music-toggle glass hidden" id="musicToggle" aria-label="Putar atau jeda musik">
+    <span id="musicIcon">♫</span><span id="musicLabel">Music off</span>
+  </button>
+
+  <main class="app-shell">
+    <!-- SLIDE 1: PASSWORD -->
+    <section class="screen active" id="screen-1" aria-labelledby="gateTitle">
+      <div class="glass gate-card">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> A LITTLE SECRET FOR YOU</div>
+        <div class="moon-heart" aria-hidden="true">♡</div>
+        <p class="overline">just for one special person</p>
+        <h1 id="gateTitle">You found<br><em>your way here.</em></h1>
+        <p class="muted intro">Ada sesuatu niehhhhh.<br>Masukkinn pasworddd, clue nyaaaa tasya dayyy</p>
+        <form id="passwordForm">
+          <label class="sr-only" for="passwordInput">Password</label>
+          <div class="password-wrap">
+            <input id="passwordInput" type="password" placeholder="Masukkan password..." autocomplete="off" inputmode="numeric" required>
+            <button type="button" class="show-password" id="showPassword" aria-label="Tampilkan password">◉</button>
+          </div>
+          <p class="error-message" id="passwordError" role="status"></p>
+          <button class="primary-button" type="submit">BUKA SURPRISE NYAAAA <span>↗</span></button>
+        </form>
+        <p class="tiny-note">a tiny universe, made just for you asekkk ♡</p>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: HER -->
+    <section class="screen" id="screen-2" aria-labelledby="slide2Title">
+      <div class="slide-content">
+        <div class="slide-counter">01 <span>/</span> 04</div>
+        <p class="eyebrow">THE WAY YOU SHINE</p>
+        <h2 id="slide2Title">A little piece<br>of <em>my favorite person kiw.</em></h2>
+        <figure class="photo-card portrait-card">
+          <img src="images/foto1.jpeg" alt="Foto kamu yang paling aku suka" class="memory-photo" onerror="this.closest('figure').classList.add('image-missing')">
+          <div class="photo-placeholder"><span>♡</span><small>Taruh foto dia di images/her-1.jpg</small></div>
+          <figcaption>you, in your own beautiful way</figcaption>
+        </figure>
+        <p class="typed-copy" data-text="Aku harap kamooo bisa melihat dirimu dari mataku kiw kiw. Kamu punya cara sendiri buat bikin hal sederhana terasa istimewa. Semoga hari ini mengingatkanmu betapa berharganya dirimu muaaaa."></p>
+        <button class="next-button" data-next="3">masii adaaa wooiiii <span>→</span></button>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: MEMORIES -->
+    <section class="screen" id="screen-3" aria-labelledby="slide3Title">
+      <div class="slide-content">
+        <div class="slide-counter">02 <span>/</span> 04</div>
+        <p class="eyebrow">OUR LITTLE WORLD</p>
+        <h2 id="slide3Title">Some moments<br>feel like <em>home.</em></h2>
+        <figure class="photo-card landscape-card">
+          <img src="images/foto2.jpeg" alt="Foto kenangan kita bersama" class="memory-photo" onerror="this.closest('figure').classList.add('image-missing')">
+          <div class="photo-placeholder"><span>✿</span><small>kiw kiw</small></div>
+          <figcaption>a memory I want to keep close</figcaption>
+        </figure>
+        <p class="typed-copy" data-text="Dari banyak hal yang terjadi, aku bersyukur kita punya cerita buat dikenang. Bukan karena semuanya selalu sempurna, tapi karena momen kecil bareng kamoo punya arti yang besar buat quuu."></p>
+        <button class="next-button" data-next="4">One more thing <span>→</span></button>
+      </div>
+    </section>
+
+    <!-- SLIDE 4: MESSAGE -->
+    <section class="screen" id="screen-4" aria-labelledby="slide4Title">
+      <div class="slide-content">
+        <div class="slide-counter">03 <span>/</span> 04</div>
+        <p class="eyebrow">THINGS I WANT YOU TO KNOW</p>
+        <h2 id="slide4Title">You deserve<br><em>so much good.</em></h2>
+        <figure class="photo-card portrait-card photo-card-small">
+          <img src="images/foto.jpeg" alt="Foto lain yang mengingatkanku padamu" class="memory-photo" onerror="this.closest('figure').classList.add('image-missing')">
+          <div class="photo-placeholder"><span>✧</span><small>Taruh foto lain di images/her-2.jpg</small></div>
+          <figcaption>my wish for your new chapter</figcaption>
+        </figure>
+        <p class="typed-copy" data-text="Di umur yang baru ini, semoga kamu lebih sering tersenyum, lebih berani mengejar mimpi, dan selalu dikelilingi orang-orang yang tulus. Kalau hari terasa berat, semoga kamu ingat bahwa kamu tidak harus kuat setiap waktu (jagoo ga bikin quotesnya)."></p>
+        <button class="next-button" data-next="5">Open my letter <span>♡</span></button>
+      </div>
+    </section>
+
+    <!-- SLIDE 5: LETTER -->
+    <section class="screen" id="screen-5" aria-labelledby="slide5Title">
+      <div class="slide-content final-content">
+        <div class="slide-counter">04 <span>/</span> 04</div>
+        <p class="eyebrow">ONE LAST THING</p>
+        <h2 id="slide5Title">A letter, <em>for you.</em></h2>
+        <button class="envelope" id="openLetter" aria-label="Buka surat cinta">
+          <span class="envelope-glow"></span>
+          <span class="envelope-icon">✉</span>
+          <span class="envelope-caption">tap to open</span>
+        </button>
+        <article class="letter glass hidden" id="letter">
+          <div class="letter-symbol">♡</div>
+          <h3>Happy birthday, my love.</h3>
+          <p class="letter-copy" id="letterCopy"></p>
+          <p class="letter-signature">with all my love, always. <span>♡</span></p>
+        </article>
+        <p class="final-note hidden" id="finalNote">I hope this year is gentle with you. You deserve the world. ♡</p>
+        <button class="restart-button hidden" id="restartButton">Replay our little story ↺</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
